@@ -1,0 +1,110 @@
+/* Potential Pallete:
+#004e66 blue
+#fcbe32 yellow
+#ff5f2e orange
+#e1eef6 white
+ */
+
+/* GRID STYLES */
+* {
+    box-sizing: border-box;
+}
+
+.survey-row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    display: block;
+}
+
+/*
+.answerContainer [class*="col-"] {
+    border: 1px solid red;
+}
+*/
+
+.col-1 {width: 100%;} 
+.col-2 {width: 50%;}
+.col-3 {width: 33.33%;}
+.col-4 {width: 25%;}
+.col-5 {width: 20%;}
+.col-6 {width: 16.66%;}
+.col-7 {width: 14.28%;}
+.col-8 {width: 12.5%;}
+.col-9 {width: 11.11%;}
+.col-10 {width: 10%;}
+.col-11 {width: 9.09%;}
+.col-12 {width: 8.33%;}
+
+/* TEST STYLES */
+/* GLOBAL LEVEL */
+body {
+    background-color: #858585;
+}
+
+/* APP TOP LEVEL */
+#app {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #e1eef6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    margin-top: 1em;
+    padding: 1.5em;
+}
+
+/* QUESTION LEVEL */
+.title {
+    font-size: 1.5em;
+}
+
+.comment {
+    font-style: italic;
+}
+
+#errorText {
+    font-weight: bold;
+}
+
+.answerContainer {
+    margin-bottom: 1em;
+}
+
+.colHeader {
+    text-align: center;
+}
+
+.active {
+    background-color: #eee;
+    text-align: center;
+}
+
+.inactive {
+    background-color: #004e66;
+    color: #e1eef6;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.nav-buttons {
+    text-align: right;
+}
+
+#backButton {
+    margin-right: .5em;
+}
+
+#nextButton, #backButton {
+    background-color: #ff5f2e;
+    color: #e1eef6;
+}
+
+#dev {
+    border: 1px solid red;
+}
